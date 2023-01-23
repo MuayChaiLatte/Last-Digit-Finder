@@ -119,11 +119,3 @@ const server = http.createServer((req, res) => { // Create server that listens f
 
 // CREATE LISTENER ON SPECIFIED PORT THAT HANDLES REQUESTS WHEN ACCESSED
 server.listen(8000);
-
-/* LASTDIGITOFEXPONENT EXPLANATION
-      The last digit of any base raised to any power will cycle through a relatively small set of values
-      e.g. with base = 2: lastDigit(2^1) = 2, lastDigit(2^2) = 4, lastDigit(2^3) = 8, lastDigit(2^4) = 6, lastDigit(2^5) = 2...
-    
-      Therefore the last digit of any exponent can be found by finding the last digit cycle.
-      By using BigInt to account for very large powers, the remainder of the power divided by the number of last digit cycle members indicates which last digit the exponent will have
-*/     
