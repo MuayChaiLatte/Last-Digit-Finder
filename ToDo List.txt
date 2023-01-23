@@ -1,0 +1,7 @@
+TODO
+
+* Add basic CSS styling
+* Add other api requests and functionality
+* Display base and number entered in DOM
+* Properly comment Main.js
+* Allow current calculate last digit of exponent function to handle error cases
